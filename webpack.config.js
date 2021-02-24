@@ -11,13 +11,14 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist')
     },
     "module": {
-        "rules": [{
-            "test":  /\.css$/,
-            "use": [
-                "style-loader",
-                "css-loader"
-            ]
-        },
+        "rules": [
+            {
+                "test":  /\.css$/,
+                "use": [
+                    "style-loader",
+                    "css-loader"
+                ]
+            },
             {
                 "test":  /\.js$/,
                 "exclude": /node_modules/,
@@ -30,8 +31,6 @@ module.exports = {
                     }
                 }, "eslint-loader"]
             }
-
-
         ]
     }
 }
